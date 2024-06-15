@@ -1,6 +1,6 @@
-import { FirebaseApp, getApp, initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getStorage } from "firebase/storage";
+import { FirebaseApp, getApp, initializeApp } from "firebase/app"
+import { getAnalytics } from "firebase/analytics"
+import { getStorage } from "firebase/storage"
 
 export let app: FirebaseApp
 
@@ -12,13 +12,13 @@ const firebaseConfig = {
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
-};
+}
 
 try {
-  app = getApp('app')
+  app = getApp("app")
 } catch (e) {
-  app = initializeApp(firebaseConfig, 'app')
+  app = initializeApp(firebaseConfig, "app")
 }
-const analytics = getAnalytics(app);
+const analytics = getAnalytics(app)
 
 export const storage = getStorage(app)

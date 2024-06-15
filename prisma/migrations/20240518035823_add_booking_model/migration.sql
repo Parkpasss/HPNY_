@@ -1,5 +1,5 @@
 -- CreateEnum
-CREATE TYPE "BookingStatus" AS ENUM ('SUCCESS', 'CANCEL');
+CREATE TYPE "BookingStatus" AS ENUM ("SUCCESS", "CANCEL");
 
 -- CreateTable
 CREATE TABLE "Booking" (
