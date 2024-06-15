@@ -1,2 +1,2 @@
 -- AlterTable
-ALTER TABLE "Room" ADD COLUMN     "imageKeys" TEXT[];
+ALTER TABLE 'Room' ADD COLUMN     'imageKeys' TEXT[];
